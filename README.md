@@ -62,16 +62,3 @@ npm test
 
 ---
 
-## ✅ Final Checklist
-
-| Task | Status |
-|------|--------|
-| Clean repo structure | ✅ |
-| Functional and styled app | ✅ |
-| Unit + Integration Tests | ✅ |
-| README with install/run/test steps | ✅ |
-| Live Demo link | 🔄 (You can use CodeSandbox / StackBlitz / Vercel) |
-| Loom video walkthrough | 🔄 |
-| GitHub public repo | 🔄 |
-
----
