@@ -1,0 +1,32 @@
+.calendar-preview {
+   
+}
+
+.preview-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4f46e5;
+  text-align: center;
+}
+
+.preview-empty {
+  font-style: italic;
+  color: #777;
+}
+
+.preview-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.preview-item {
+  background: #e0e7ff;
+  color: #3730a3;
+  text-decoration: none;
+  list-style: none;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 14px;
+}
+

@@ -1,0 +1,95 @@
+/* Base wrapper */
+.custom-pattern {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+/* Section label */
+.labelcustom {
+  font-size: 16px;
+  font-weight: 600;
+  color: #a2abee;
+  margin-bottom: 4px;
+}
+
+/* Grid of checkboxes (Weekly) */
+.weekday-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.weekday-item {
+  background-color: #ede9fe;
+  color: #1e1b4b;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.2s ease;
+  user-select: none;
+}
+
+.weekday-item input {
+  accent-color: #4f46e5;
+  cursor: pointer;
+}
+
+/* On hover */
+.weekday-item:hover {
+  background-color: #c4b5fd;
+  color: white;
+}
+
+/* Monthly pattern input group */
+.monthly-pattern {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Input for nth (e.g. 1st, 2nd...) */
+.input-smallcustom {
+  width: 60px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Dropdown for weekday selection */
+.selectcustom {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  color: #1e1b4b;
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Custom select hover/focus */
+.selectcustom:hover,
+.selectcustom:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+/* Animation container for section entry */
+.custom-pattern {
+  animation: fadeSlideIn 0.4s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

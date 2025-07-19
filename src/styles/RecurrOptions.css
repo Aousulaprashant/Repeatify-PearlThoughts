@@ -1,0 +1,95 @@
+.recurrence-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.recurrence-options .label {
+  font-weight: 600;
+  color: #a2abee;
+}
+
+/* Basic input & select styling */
+.recurrence-options .input,
+.select {
+  width: fit-content;
+  padding: 10px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9fafb;
+  transition: all 0.9s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Additional input-specific width */
+.recurrence-options .inpop {
+  max-width: 30%;
+}
+
+/* Focus enhancements for input & select */
+.input:focus,
+.select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+  outline: none;
+  background-color: #fff;
+}
+.select option {
+  background-color: #f9fafb;
+  color: #1f2937;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Optional hover-like effect (only supported in some browsers) */
+.select option:checked {
+  background-color: #e0e7ff;
+  color: #1e40af;
+  font-weight: 600;
+}
+.select option {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+/* On select (not hover), apply style */
+.select option:checked {
+  background-color: #e0e7ff;
+  color: #1e40af;
+  font-weight: 600;
+}
+.recurrence-options .inpop {
+  margin-top: 17px;
+}
+.recurrence-options .select,
+.recurrence-options .inpop {
+  background-color: #11266c3d; /* light indigo background */
+  color: #b0acea; /* deep text color for contrast */
+  border: 1px solid #c7d2fe; /* soft indigo border */
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 10px 12px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Focus ring with indigo */
+.recurrence-options .select:focus,
+.recurrence-options .inpop:focus {
+  outline: none;
+  border-color: #6366f1; /* strong indigo */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+  background-color: #20337467;
+}
+
+/* Hover subtle effect */
+.recurrence-options .select:hover,
+.recurrence-options .inpop:hover {
+  background-color: #20337467;
+  border-color: #313da775;
+}
