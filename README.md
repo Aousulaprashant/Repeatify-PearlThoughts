@@ -18,7 +18,6 @@ A beautifully styled, fully functional **Recurring Date Picker** built with Reac
 ## 🧰 Tech Stack
 
 - **Next.js** (React)
-- **Tailwind CSS** for styling
 - **React Context API** for state management
 - **React Datepicker** for calendar inputs
 - **Jest + React Testing Library** for tests
