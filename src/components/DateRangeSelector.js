@@ -9,10 +9,18 @@ const FloatingDatePicker = ({ label, value, onChange }) => {
   const [focused, setFocused] = useState(false);
 
   const showLabelUp = focused || !!value;
+  const inputId = `datepicker-${label.toLowerCase().replace(/\s+/g, "-")}`; // 👈 unique & testable ID
 
   return (
     <div className="floating-date-wrapper">
+      <label
+        htmlFor={inputId}
+        className={`floating-label ${showLabelUp ? "float" : ""}`}
+      >
+        {label}
+      </label>
       <DatePicker
+        id={inputId} // 👈 bind to label
         selected={value ? new Date(value) : null}
         onChange={(date) =>
           onChange(date ? date.toISOString().split("T")[0] : "")
@@ -24,9 +32,6 @@ const FloatingDatePicker = ({ label, value, onChange }) => {
         onBlur={() => setFocused(false)}
         isClearable
       />
-      <label className={`floating-label ${showLabelUp ? "float" : ""}`}>
-        {label}
-      </label>
     </div>
   );
 };
